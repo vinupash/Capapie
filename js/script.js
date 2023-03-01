@@ -54,7 +54,7 @@ $('.product_sider').slick({
     {
         breakpoint: 576,
         settings: {
-            slidesToShow: 2,
+            slidesToShow: 1,
             slidesToScroll: 1,
             dots: false
         }
@@ -75,9 +75,9 @@ $('.news_sider').slick({
 $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     if (scroll >= 450) {
-        $('.header_section').addClass('fixed');
+        $('.header_section').addClass('fixed_top');
     } else {
-        $('.header_section').removeClass('fixed');
+        $('.header_section').removeClass('fixed_top');
     }
 });
 
